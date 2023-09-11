@@ -6,13 +6,13 @@ import shutil
 addon = xbmcaddon.Addon()
 addonname = addon.getAddonInfo('name')
 ahome = addon.getAddonInfo('path')
-srcw_path = ahome + '/resources/data/src_wake.py'
-srcb_path = ahome + '/resources/data/src_standby.py'
-bu_wake_path = ahome + '/resources/data/backup/bu_wake.py'
-bu_sb_path = ahome + '/resources/data/backu/bu_standby.py'
+srcw_path = ahome + 'resources/data/src_wake.py'
+srcb_path = ahome + 'resources/data/src_standby.py'
+bu_wake_path = ahome + 'resources/data/backup/bu_wake.py'
+bu_sb_path = ahome + 'resources/data/backu/bu_standby.py'
 destw_path = '/home/osmc/.kodi/userdata/wake.py'
 destsb_path = '/home/osmc/.kodi/userdata/standby.py'
-runopath = ahome + '/resources/data/runonce.txt'
+runopath = ahome + 'resources/data/runonce.txt'
 
 check_runofile = os.path.isfile(runopath)
 if not check_runofile:
