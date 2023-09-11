@@ -15,7 +15,7 @@ if ethersus:
 
 if wifisus:
     f.write("wifi\n")
-	os.system('sudo connmanctl disable wifi')
+    os.system('sudo connmanctl disable wifi')
 
 if btsus:
     f.write("bt\n")
