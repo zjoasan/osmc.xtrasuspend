@@ -36,7 +36,7 @@ else:
     if check_wake_bu:
         restore_w = TRUE
     
-    if check_sb_path:
+    if check_sb_bu:
         restore_sb = TRUE
 
     rest_choice = xbmcgui.Dialog().yesno(addonname, "Restore old wake/standby scripts?")
