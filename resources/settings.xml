@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<settings version="1">
+  <section id="osmc.xtrasuspend">
+    <category id="xtrasuspend" label="32000" help="Toogle which of the Connman technologies that will be suspended along with Kodi">
+      <group id="1">
+	      <setting id="ether" type="boolean" label="32001" help="Toogle to suspend Ethernet">
+	        <level>0</level>
+	        <default>false</default>
+	        <control type="toggle"/>
+          </setting>
+	      <setting id="wifi" type="boolean" label="32002" help="Toogle to suspend Wifi">
+	        <level>0</level>
+	        <default>false</default>
+	        <control type="toggle"/>
+          </setting>
+	      <setting id="bt" type="boolean" label="32003" help="Toogle to suspend BlueTooth">
+	        <level>0</level>
+	        <default>false</default>
+	        <control type="toggle"/>
+          </setting>		  
+	  </group>
+    </category>
+  </section>
+</settings>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="osmc.xtrasuspend" name="OSMC's extended suspend" version="0.1" provider-name="zjoasan">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="resources/lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_gb">NIC suspention with KODI</summary>
+		<description lang="en_gb">Toogle which technoplogies that will suspend alongside KODI. This addon will replace existing wake.py and standby.py</description>
+		<disclaimer lang="en_gb">Use at your own risk</disclaimer>
+		<language>en</language> 
+		<platform>linux</platform>
+		<license>GPL2</license>
+		<forum>https://discorse.osmc.tv</forum> <!-- may be omitted  -->
+		<website></website>
+		<email>joakim.s@webbkontakt.net</email>
+		<source></source>
+		<news>First release of the script.</news>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+			<banner></banner>
+			<clearlogo></clearlogo>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
