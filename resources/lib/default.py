@@ -28,6 +28,8 @@ if not check_runofile:
 
     shutil.copyfile(srcw_path, destw_path)
     shutil.copyfile(srcsb_path, destsb_path)
+
+    xbmcaddon.Addon().openSettings()
     
 else:
     check_wake_bu = os.path.isfile(bu_wake_path)
@@ -39,7 +41,7 @@ else:
     if check_sb_bu:
         restore_sb = TRUE
 
-    rest_choice = xbmcgui.Dialog().yesno(addonname, "Restore old wake/standby scripts?")
+    rest_choice = xbmcgui.Dialog().yesno(addonname, ¤32004)
     if rest_choice:
         if restore_w:
             os.remove(destw_path)
@@ -49,10 +51,9 @@ else:
             shutil.copyfile(bu_sb_path, destsb_path)
          
     else:
-        del_choice = xbmcgui.Dialog().yesno(addonname, "Remove wake/standby scripts?")    
+        del_choice = xbmcgui.Dialog().yesno(addonname, #32005)    
         if del_choice:
            os.remove(destw_path)
            os.remove(destsb_path)
 
-xbmcaddon.Addon().openSettings()
-xbmcgui.Dialog().ok(addonname, "Suspend extras configured")
+xbmcgui.Dialog().ok(addonname, #32006)
