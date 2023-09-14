@@ -41,7 +41,7 @@ else:
     if check_sb_bu:
         restore_sb = TRUE
 
-    rest_choice = xbmcgui.Dialog().yesno(addonname, ¤32004)
+    rest_choice = xbmcgui.Dialog().yesno(addonname,  self._common_addon.getLocalizedString(32004))
     if rest_choice:
         if restore_w:
             os.remove(destw_path)
@@ -51,9 +51,9 @@ else:
             shutil.copyfile(bu_sb_path, destsb_path)
          
     else:
-        del_choice = xbmcgui.Dialog().yesno(addonname, #32005)    
+        del_choice = xbmcgui.Dialog().yesno(addonname, self._common_addon.getLocalizedString(32005))    
         if del_choice:
            os.remove(destw_path)
            os.remove(destsb_path)
 
-xbmcgui.Dialog().ok(addonname, #32006)
+xbmcgui.Dialog().ok(addonname,  self._common_addon.getLocalizedString(32006))
