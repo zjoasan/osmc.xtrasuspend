@@ -5,8 +5,8 @@ SETTINGS = xbmcaddon.Addon('osmc.xtrasuspend')
 ethersus = SETTINGS.getSetting('ether')
 wifisus = SETTINGS.getSetting('wifi')
 btsus = SETTINGS.getSetting('bt')
-sesfile = '/home/osmc/.kodi/userdata/previussession.txt'
-os.system('rm -f ./previussession.txt')
+sesfile = xbmcvfs.translatePath("special://userdata/previoussession.txt")
+os.system('rm -f %s' % sesfile)
 f = open(sesfile, "w")
 
 if ethersus:

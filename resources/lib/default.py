@@ -1,5 +1,6 @@
 import xbmcaddon
 import xbmcgui
+import xbmcvfs
 import os
 import shutil
 
@@ -10,8 +11,8 @@ srcw_path = os.path.join(ahome, 'resources/data/src_wake.py')
 srcsb_path = os.path.join(ahome, 'resources/data/src_standby.py')
 bu_wake_path = os.path.join(ahome, 'resources/data/backup/bu_wake.py')
 bu_sb_path = os.path.join(ahome, 'resources/data/backup/bu_standby.py')
-destw_path = '/home/osmc/.kodi/userdata/wake.py'
-destsb_path = '/home/osmc/.kodi/userdata/standby.py'
+destw_path = xbmcvfs.translatePath("special://userdata/wake.py")
+destsb_path = xbmcvfs.translatePath("special://userdata/standby.py")
 runopath = os.path.join(ahome + 'resources/data/runonce.txt')
 
 check_runofile = os.path.isfile(runopath)

@@ -1,7 +1,9 @@
 import os
-sesfile = '/home/osmc/.kodi/userdata/previussession.txt'
+import xbmcvfs
 
-with open(rsesfile, 'r') as fp:
+sesfile = xbmcvfs.translatePath("special://userdata/previoussession.txt")
+
+with open(sesfile, 'r') as fp:
     for line in enumerate(fp):
 	    if line == "ethernet":
 		    os.system('sudo connmanctl enable ethernet')

@@ -58,3 +58,6 @@ msgstr ""
 msgctxt "#32010"
 msgid "Toogle this to susend Bluetooth"
 msgstr ""
+
+msgctxt "#32011"
+msgid "Toogle Connman technologies that will be suspended along with Kodi"
