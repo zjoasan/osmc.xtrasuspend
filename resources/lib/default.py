@@ -60,3 +60,4 @@ else:
            os.remove(destsb_path)
 
 endstore = xbmcgui.Dialog().ok(addonname, addon.getLocalizedString(32006))
+exit()

@@ -25,4 +25,4 @@ if btsus:
 
 f.close()
 
-
+exit()

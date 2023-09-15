@@ -15,3 +15,5 @@ with open(sesfile, 'r') as fp:
 		    os.system('sudo connmanctl enable bluetooth')
 		else:
 		    pass
+
+exit()

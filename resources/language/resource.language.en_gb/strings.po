@@ -61,3 +61,4 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Toogle Connman technologies that will be suspended along with Kodi"
+msgstr ""
