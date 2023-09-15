@@ -42,3 +42,19 @@ msgstr ""
 msgctxt "#32006"
 msgid "Suspend extras configured."
 msgstr ""
+
+msgctxt "#32007"
+msgid "Technologies"
+msgstr ""
+
+msgctxt "#32008"
+msgid "Toogle this to susend Ethernet"
+msgstr ""
+
+msgctxt "#320095"
+msgid "Toogle this to susend Wifi"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Toogle this to susend Bluetooth"
+msgstr ""
