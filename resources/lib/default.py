@@ -6,13 +6,13 @@ import shutil
 addon = xbmcaddon.Addon()
 addonname = addon.getAddonInfo('name')
 ahome = addon.getAddonInfo('path')
-srcw_path = ahome + 'resources/data/src_wake.py'
-srcsb_path = ahome + 'resources/data/src_standby.py'
-bu_wake_path = ahome + 'resources/data/backup/bu_wake.py'
-bu_sb_path = ahome + 'resources/data/backup/bu_standby.py'
+srcw_path = os.path.join(ahome, 'resources/data/src_wake.py')
+srcsb_path = os.path.join(ahome, 'resources/data/src_standby.py')
+bu_wake_path = os.path.join(ahome, 'resources/data/backup/bu_wake.py')
+bu_sb_path = os.path.join(ahome, 'resources/data/backup/bu_standby.py')
 destw_path = '/home/osmc/.kodi/userdata/wake.py'
 destsb_path = '/home/osmc/.kodi/userdata/standby.py'
-runopath = ahome + 'resources/data/runonce.txt'
+runopath = os.path.join(ahome + 'resources/data/runonce.txt')
 
 check_runofile = os.path.isfile(runopath)
 if not check_runofile:
@@ -41,7 +41,7 @@ else:
     if check_sb_bu:
         restore_sb = TRUE
 
-    rest_choice = xbmcgui.Dialog().yesno(addonname,  self._common_addon.getLocalizedString(32004))
+    rest_choice = xbmcgui.Dialog().yesno(addonname, addon.getLocalizedString(32004))
     if rest_choice:
         if restore_w:
             os.remove(destw_path)
@@ -51,9 +51,9 @@ else:
             shutil.copyfile(bu_sb_path, destsb_path)
          
     else:
-        del_choice = xbmcgui.Dialog().yesno(addonname, self._common_addon.getLocalizedString(32005))    
+        del_choice = xbmcgui.Dialog().yesno(addonname, addon.getLocalizedString(32005))    
         if del_choice:
            os.remove(destw_path)
            os.remove(destsb_path)
 
-xbmcgui.Dialog().ok(addonname,  self._common_addon.getLocalizedString(32006))
+xbmcgui.Dialog().ok(addonname, addon.getLocalizedString(32006))yesno
